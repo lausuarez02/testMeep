@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/testMeep/static/css/main.dd3b4803.chunk.css",
+    "main.js": "/testMeep/static/js/main.806bceba.chunk.js",
+    "main.js.map": "/testMeep/static/js/main.806bceba.chunk.js.map",
+    "runtime-main.js": "/testMeep/static/js/runtime-main.4cc69243.js",
+    "runtime-main.js.map": "/testMeep/static/js/runtime-main.4cc69243.js.map",
+    "static/js/2.0efafbbc.chunk.js": "/testMeep/static/js/2.0efafbbc.chunk.js",
+    "static/js/2.0efafbbc.chunk.js.map": "/testMeep/static/js/2.0efafbbc.chunk.js.map",
+    "static/js/3.8c6e7a1f.chunk.js": "/testMeep/static/js/3.8c6e7a1f.chunk.js",
+    "static/js/3.8c6e7a1f.chunk.js.map": "/testMeep/static/js/3.8c6e7a1f.chunk.js.map",
+    "index.html": "/testMeep/index.html",
+    "static/css/main.dd3b4803.chunk.css.map": "/testMeep/static/css/main.dd3b4803.chunk.css.map",
+    "static/js/2.0efafbbc.chunk.js.LICENSE.txt": "/testMeep/static/js/2.0efafbbc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4cc69243.js",
+    "static/js/2.0efafbbc.chunk.js",
+    "static/css/main.dd3b4803.chunk.css",
+    "static/js/main.806bceba.chunk.js"
+  ]
+}
