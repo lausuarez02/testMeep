@@ -104,7 +104,7 @@ const Body = () => {
       {selected ? (
   <InfoWindow 
   position={{lat:selected.y, lng:selected.x}}
-  onCloseClick={() => {
+  onMouseOut={() => {
     setSelected(null);
   }}
 
