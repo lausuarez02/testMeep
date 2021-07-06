@@ -60,9 +60,8 @@ if(!isLoaded) return "Loading Maps";
 
   //Limit to 200 objects
   var vehicles = []
-  // vehicle when some error wiht the api
   var vehicle;
-
+  console.log(state.timestamp)
   
 
 if(state.timestamp){

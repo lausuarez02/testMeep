@@ -1,6 +1,7 @@
 import React , {useState,useEffect} from "react";
+import {Link} from "react-router-dom"
 import Pagination from "./pagination";
-import NavBar from "./navBar";
+import {}
 
 const Vehicles = () => {
     const [state, setState] = useState([])
@@ -39,9 +40,24 @@ const Vehicles = () => {
 
     return(
        <div>
-     
-     
-     <NavBar/>
+                   <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <div className="container-fluid">
+    <a className="navbar-brand" rel="noopener" href="https://meep.app/" target="_blank"><img src="https://meep.app/wp-content/uploads/2018/06/Logo-Meep.png" style={{width:"75px"}}/></a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse" id="navbarNav">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+          <Link to="/" className="nav-link active" aria-current="page" >Home</Link>
+        </li>
+        <li className="nav-item">
+          <Link to="/Vehicles" className="nav-link" >Vehicles</Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 {/*SearchBar to filter */}
 <input className="form-control me-2" type="search" placeholder="Search..." onChange={e => {setSearch(e.target.value)}} />

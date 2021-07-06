@@ -37,55 +37,44 @@ const Body = () => {
   const [state, setState] = useState([])
 
 
-//Api call
-useEffect(() => {
-  fetch("https://apidev.meep.me/tripplan/api/v1/routers/lisboa/resources?")
-  .then(response => response.json())
-  .then(data => setState(data))
-},[])
-//Load 
-const { isLoaded, loadError } = useLoadScript({
-  id: 'google-map-script',
-  googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
-  libraries,
-});
 
-if(loadError) return "Error loading maps";
-if(!isLoaded) return "Loading Maps";
-
- 
+ //Api call
+  useEffect(() => {
+    fetch("https://apidev.meep.me/tripplan/api/v1/routers/lisboa/resourcs?")
+    .then(response => response.json())
+    .then(data => setState(data))
+  },[])
 
   
 
-
+var test = state.id
+console.log(state.id)
   //Limit to 200 objects
+
   var vehicles = []
-  // vehicle when some error wiht the api
-  var vehicle;
-
-  
-
-if(state.timestamp){
-  vehicle = state.timestamp
-}
-else if(state.errors){
-  vehicle = state.errors.message
-}
-else{
-  vehicles = state.slice(0,200)
- }
-
- 
+   if(test){
+    vehicles = state.slice(0,200)
+   }
 
    //error from the api
-
+else if(state.errors){
+   vehicles = state.errors.message
+}
 //another type of error
 
 
   
    
   
+//Load 
+    const { isLoaded, loadError } = useLoadScript({
+        id: 'google-map-script',
+        googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
+        libraries,
+      });
 
+    if(loadError) return "Error loading maps";
+    if(!isLoaded) return "Loading Maps";
 
  
     
@@ -100,15 +89,14 @@ else{
 
       {/* Start of Google map and finish of navBar*/}
       <div>
-        {vehicle ? (
-  <MapError vehicles={vehicles} mapContainerStyle={mapContainerStyle} center={center} options={options}/>
+        {vehicles ? (
+ <Map vehicles={vehicles} mapContainerStyle={mapContainerStyle} center={center} options={options}/>
         ) 
         
         :
         
         (
-         
-          <Map vehicles={vehicles} mapContainerStyle={mapContainerStyle} center={center} options={options}/>
+          <MapError vehicles={vehicles} mapContainerStyle={mapContainerStyle} center={center} options={options}/>
         )}
        
       

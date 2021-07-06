@@ -39,7 +39,7 @@ const Body = () => {
 
 //Api call
 useEffect(() => {
-  fetch("https://apidev.meep.me/tripplan/api/v1/routers/lisboa/resources?")
+  fetch("https://apidev.meep.me/tripplan/api/v1/routers/lisboa/resurces?")
   .then(response => response.json())
   .then(data => setState(data))
 },[])
@@ -60,9 +60,8 @@ if(!isLoaded) return "Loading Maps";
 
   //Limit to 200 objects
   var vehicles = []
-  // vehicle when some error wiht the api
   var vehicle;
-
+  console.log(state.timestamp)
   
 
 if(state.timestamp){
@@ -100,7 +99,7 @@ else{
 
       {/* Start of Google map and finish of navBar*/}
       <div>
-        {vehicle ? (
+        {vehicles.timestamp ? (
   <MapError vehicles={vehicles} mapContainerStyle={mapContainerStyle} center={center} options={options}/>
         ) 
         

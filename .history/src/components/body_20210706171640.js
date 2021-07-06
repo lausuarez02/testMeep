@@ -60,7 +60,7 @@ if(!isLoaded) return "Loading Maps";
 
   //Limit to 200 objects
   var vehicles = []
-  // vehicle when some error wiht the api
+  // veh
   var vehicle;
 
   

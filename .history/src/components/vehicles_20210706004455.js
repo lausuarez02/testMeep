@@ -1,4 +1,5 @@
 import React , {useState,useEffect} from "react";
+import {Link} from "react-router-dom"
 import Pagination from "./pagination";
 import NavBar from "./navBar";
 
@@ -39,9 +40,7 @@ const Vehicles = () => {
 
     return(
        <div>
-     
-     
-     <NavBar/>
+NavBar
 
 {/*SearchBar to filter */}
 <input className="form-control me-2" type="search" placeholder="Search..." onChange={e => {setSearch(e.target.value)}} />
