@@ -8,7 +8,7 @@ const Pagination = ({ paginate,postsPerPage, totalPosts}) => {
     }
 
     return(
-        <div className="container">
+        <div>
         <nav>
             <ul className='pagination'>
                 {pageNumbers.map(number => (
@@ -23,7 +23,6 @@ const Pagination = ({ paginate,postsPerPage, totalPosts}) => {
                }
 </ul>
         </nav>
-        </div>
     )
 }
 
