@@ -6,7 +6,7 @@
 <h3>In Order to deploy it in your computer you will have to do several things</h3>
 
  - First: Have nodeJS installed in your computer
- - Second: Go to the top left where it says fork 
+ - Second: Go to the top right where it says fork 
  ![GitHub Logo](/first.jpeg)
  - Third: It will appear in your repositories section where you can clone it with the command:
   (If using linux): sudo git clone https://github.com/lausuarez02/testMeep.git 
