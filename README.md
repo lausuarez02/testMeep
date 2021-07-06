@@ -17,9 +17,9 @@
 
 
 ## Commands to succesfully deploy it in your computer:
-# sudo git clone https://github.com/lausuarez02/testMeep.git 
-# sudo npm install
-# sudo npm start
+### sudo git clone https://github.com/lausuarez02/testMeep.git 
+### sudo npm install
+### sudo npm start
 
 
 
