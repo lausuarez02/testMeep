@@ -1,9 +1,10 @@
 ## How to fork and deploy it in your computer
 <h3>The project is made with react, react router,react-google-maps/api, https://snazzymaps.com/ , bootstrap and the meep api</h3>
 
-<p>It's deployed in github pages</p>
+<p>It's deployed in github pages here https://lausuarez02.github.io/testMeep/#/</p>
 
 <h3>In Order to deploy it in your computer you will have to do several things</h3>
+
  - First: Have nodeJS installed in your computer
  - Second: Go to the top left where it says fork 
  ![GitHub Logo](/first.jpeg)
