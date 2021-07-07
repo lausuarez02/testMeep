@@ -22,6 +22,18 @@
 ### sudo npm start
 
 
+## Example of the Project
+
+ ![Map logo](/MapFirst.jpeg)
+ 
+ 
+ ![Map logo](/MapSecond.jpeg)
+ 
+ ![Map logo](/MapThird.jpeg)
+ 
+ ![Map logo](/MapFourth.jpeg)
+
+
 
 
 
