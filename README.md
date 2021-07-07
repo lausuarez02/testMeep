@@ -24,7 +24,7 @@
 
 ## Example of the Project
 
- ![Map logo](/MapFirst.jpeg)
+ ![Map logo](/mapFirst.jpeg)
  
  
  ![Map logo](/MapSecond.jpeg)
